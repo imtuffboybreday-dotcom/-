@@ -1,0 +1,494 @@
+local Orvion = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/KnullXDgt/Orvion-UI-Library/main/source.luau"
+))()
+
+local Window = Orvion:CreateWindow({
+    Title = "MS - TrueHub",
+    Center = true,
+    Draggable = true,
+    Resizable = true,
+    ToggleButton = true,
+    ConfigFolder = "MSHUB"
+})
+
+local Icon = "rbxassetid://16932740082"
+
+--------------------------------------------------
+-- SCRIPTS TAB
+--------------------------------------------------
+
+local Tab = Window:CreateTab("Scripts")
+
+-- 1. Asterazuke Glitcher
+Window:AddButton(
+    Tab,
+    "Asterazuke Glitcher",
+    "Asterazuke GlitcherJAB",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/asterazuke%20glitcher.lua"
+        ))()
+    end
+)
+
+-- 2. ReanimateJAB
+Window:AddButton(
+    Tab,
+    "ReanimateJAB",
+    "Scripted by MonkeyJAB",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://jewomia.pages.dev/Scripts/KeyLol.luau"
+        ))()
+    end
+)
+
+-- 3. FE Server Admin
+Window:AddButton(
+    Tab,
+    "FE Server Admin",
+    "FE Server AdminJAB",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Fe%20server%20admin.lua"
+        ))()
+    end
+)
+
+-- 4. ServerHacker-X
+Window:AddButton(
+    Tab,
+    "ServerHacker-X",
+    "ServerHackerJAB",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/ServerHacker-X.lua"
+        ))()
+    end
+)
+
+-- 5. Brookhaven
+Window:AddButton(
+    Tab,
+    "Brookhaven",
+    "Brookhaven script",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://pastefy.app/lkT764dH/raw"
+        ))()
+    end
+)
+
+-- 6. Uhhhh Reanimate
+Window:AddButton(
+    Tab,
+    "Uhhhh Reanimate",
+    "Uhhhh reanimate Jab",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/testing734/UhhhhhhModded/refs/heads/main/betabetafork"
+        ))()
+    end
+)
+
+-- 7. VAHLEAH
+Window:AddButton(
+    Tab,
+    "VAHLEAH",
+    "VAHLEAHJAB",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/imtuffboybreday-dotcom/LeoWinners/refs/heads/main/VAHLEAH"
+        ))()
+    end
+)
+
+-- 8. Neptunian VJab
+Window:AddButton(
+    Tab,
+    "Neptunian VJab",
+    "Neptunian VJab",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Neptunian%20Tory%20remake%20(5).lua"
+        ))()
+    end
+)
+
+-- 9. Star Glitcher
+Window:AddButton(
+    Tab,
+    "Star Glitcher",
+    "Star Glitcher",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/axirian%20glitcher%20limb.txt.lua"
+        ))()
+    end
+)
+
+-- 10. Admin Noli
+Window:AddButton(
+    Tab,
+    "Admin Noli",
+    "Admin Noli - Limb Reanimation",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Admin%20Noli%20-%20Limb%20Reanimation.lua"
+        ))()
+    end
+)
+
+-- 11. Forsaken Jason
+Window:AddButton(
+    Tab,
+    "Forsaken Jason",
+    "FE Forsaken Jason - Limb Reanimation v2",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Fe%20Forsaken%20Jason%20-%20Limb%20Reanimation%20v2.lua"
+        ))()
+    end
+)
+
+-- 12. HeadRotate - Renim First
+Window:AddButton(
+    Tab,
+    "HeadRotate - Renim First",
+    "HeadRotate / Renim First",
+    Icon,
+    function()
+        local ok, err = pcall(function()
+            loadstring(game:HttpGet(
+                "https://pastefy.app/AIUWXlij/raw"
+            ))()
+        end)
+
+        if not ok then
+            warn(err)
+        end
+    end
+)
+
+
+--------------------------------------------------
+-- RFE TAB
+--------------------------------------------------
+
+local RFETab = Window:CreateTab("RFE")
+
+-- RFE Locust
+Window:AddButton(
+    RFETab,
+    "RFE Locust",
+    "Run RFE commands + Locust FE",
+    Icon,
+    function()
+
+        local function L(msg)
+            game.ReplicatedStorage["01_server"]:FireServer(
+                "cmd",
+                msg
+            )
+        end
+
+        L("-gh 105900284766105 89011214394076 80591929991021 74841586768030 79723296413410 71673828053110 18626055142 18625377030 17314457081 17606680159")
+
+        task.wait(1)
+
+        L("-pd")
+
+        task.wait(1)
+
+        L("-sh")
+
+        task.wait(3)
+
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/imtuffboybreday-dotcom/LeoWinners/refs/heads/main/locust-fe-by-melon-scripter-check-the-description-for-hats_1785097445636_zsYvWCHw2Z.txt",
+            true
+        ))()
+    end
+)
+
+-- KaliHub
+Window:AddButton(
+    RFETab,
+    "KaliHub",
+    "Load KaliHub",
+    Icon,
+    function()
+        loadstring(game:HttpGet(
+            "https://kalihub.xyz/loader.lua"
+        ))()
+    end
+)
+
+
+--------------------------------------------------
+-- SCRIPTBLOX API TAB
+--------------------------------------------------
+
+local ScriptbloxApis = Window:CreateTab("ScriptbloxApis")
+
+local HttpService = game:GetService("HttpService")
+
+local CurrentFilter = "All"
+local LastResults = {}
+
+
+--------------------------------------------------
+-- FILTER FUNCTION
+--------------------------------------------------
+
+local function MatchesFilter(scriptData)
+
+    if CurrentFilter == "All" then
+        return true
+    end
+
+    local hasKey = scriptData.key == true
+
+    if CurrentFilter == "Keyless" then
+        return not hasKey
+    end
+
+    if CurrentFilter == "Key" then
+        return hasKey
+    end
+
+    if CurrentFilter == "Paid" then
+        return scriptData.paid == true
+            or scriptData.isPaid == true
+            or scriptData.keyType == "paid"
+    end
+
+    return true
+end
+
+
+--------------------------------------------------
+-- FILTER OPTION
+--------------------------------------------------
+
+Window:AddDropdown(
+    ScriptbloxApis,
+    "Filter",
+    "Filter ScriptBlox results",
+    {
+        "All",
+        "Keyless",
+        "Key",
+        "Paid"
+    },
+    function(value)
+
+        CurrentFilter = value
+
+        print(
+            "[ScriptBlox] Filter:",
+            CurrentFilter
+        )
+
+        if #LastResults > 0 then
+
+            local count = 0
+
+            for _, scriptData in ipairs(LastResults) do
+
+                if MatchesFilter(scriptData) then
+                    count = count + 1
+                end
+
+            end
+
+            print(
+                "[ScriptBlox] Matching results:",
+                count
+            )
+        end
+    end
+)
+
+
+--------------------------------------------------
+-- SEARCH
+--------------------------------------------------
+
+Window:AddInput(
+    ScriptbloxApis,
+    "ScriptBlox Search",
+    "Btw This Is Beta",
+    "Enter game or script name...",
+    function(query)
+
+        if not query
+            or query:gsub("%s+", "") == "" then
+            return
+        end
+
+        local encodedQuery =
+            HttpService:UrlEncode(query)
+
+        local success, response = pcall(function()
+
+            return game:HttpGet(
+                "https://scriptblox.com/api/script/search?q="
+                .. encodedQuery
+                .. "&max=20"
+            )
+
+        end)
+
+        if not success then
+
+            warn(
+                "[ScriptBlox] Request failed:",
+                response
+            )
+
+            return
+        end
+
+
+        local decodeSuccess, data =
+            pcall(function()
+
+                return HttpService:JSONDecode(
+                    response
+                )
+
+            end)
+
+
+        if not decodeSuccess then
+
+            warn(
+                "[ScriptBlox] Failed to decode response"
+            )
+
+            return
+        end
+
+
+        if not data
+            or not data.result
+            or not data.result.scripts then
+
+            warn(
+                "[ScriptBlox] No results"
+            )
+
+            return
+        end
+
+
+        LastResults =
+            data.result.scripts
+
+
+        --------------------------------------------------
+        -- RESULTS
+        --------------------------------------------------
+
+        local shown = 0
+
+        for _, scriptData in ipairs(LastResults) do
+
+            if MatchesFilter(scriptData) then
+
+                local title =
+                    scriptData.title
+                    or "Unknown Script"
+
+                local slug =
+                    scriptData.slug
+
+                if slug then
+
+                    local rawURL =
+                        "https://scriptblox.com/api/script/raw/"
+                        .. slug
+
+                    local loadstringCode =
+                        'loadstring(game:HttpGet("'
+                        .. rawURL
+                        .. '"))()'
+
+
+                    Window:AddButton(
+                        ScriptbloxApis,
+                        title,
+                        "Copy Loadstring",
+                        Icon,
+                        function()
+
+                            if setclipboard then
+
+                                setclipboard(
+                                    loadstringCode
+                                )
+
+                                print(
+                                    "[ScriptBlox] Copied:",
+                                    title
+                                )
+
+                            else
+
+                                warn(
+                                    "[ScriptBlox] setclipboard unavailable"
+                                )
+
+                            end
+
+                        end
+                    )
+
+                    shown =
+                        shown + 1
+                end
+            end
+        end
+
+
+        print(
+            "[ScriptBlox] Found:",
+            #LastResults,
+            "| Showing:",
+            shown,
+            "| Filter:",
+            CurrentFilter
+        )
+
+    end
+)
+
+
+--------------------------------------------------
+-- INFO
+--------------------------------------------------
+
+Window:AddParagraph(
+    ScriptbloxApis,
+    "Powered by ScriptBlox.com",
+    "Search ScriptBlox, filter results, and copy loadstrings."
+)
+
+
+--------------------------------------------------
+-- LOADED
+--------------------------------------------------
+
+print("truehub")
