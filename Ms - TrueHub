@@ -172,7 +172,7 @@ Window:AddButton(
     Icon,
     function()
         local ok, err = pcall(function()
-            loadstring(game:HttpGetAsync(
+            loadstring(game:HttpGet(
                 "https://raw.githubusercontent.com/imtuffboybreday-dotcom/LeoWinners/refs/heads/main/XReanimate"
             ))()
         end)
