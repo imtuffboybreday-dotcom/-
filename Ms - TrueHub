@@ -3,7 +3,7 @@ local Orvion = loadstring(game:HttpGet(
 ))()
 
 local Window = Orvion:CreateWindow({
-    Title = "MS - TrueHub",
+    Title = "MS - TrueHub v2 By 123",
     Center = true,
     Draggable = true,
     Resizable = true,
