@@ -13,13 +13,8 @@ local Window = Orvion:CreateWindow({
 
 local Icon = "rbxassetid://16932740082"
 
---------------------------------------------------
--- SCRIPTS TAB
---------------------------------------------------
-
 local Tab = Window:CreateTab("Scripts")
 
--- 1. Asterazuke Glitcher
 Window:AddButton(
     Tab,
     "Asterazuke Glitcher",
@@ -32,7 +27,6 @@ Window:AddButton(
     end
 )
 
--- 2. ReanimateJAB
 Window:AddButton(
     Tab,
     "ReanimateJAB",
@@ -45,7 +39,6 @@ Window:AddButton(
     end
 )
 
--- 3. FE Server Admin
 Window:AddButton(
     Tab,
     "FE Server Admin",
@@ -58,7 +51,6 @@ Window:AddButton(
     end
 )
 
--- 4. ServerHacker-X
 Window:AddButton(
     Tab,
     "ServerHacker-X",
@@ -71,7 +63,6 @@ Window:AddButton(
     end
 )
 
--- 5. Brookhaven
 Window:AddButton(
     Tab,
     "Brookhaven",
@@ -84,7 +75,6 @@ Window:AddButton(
     end
 )
 
--- 6. Uhhhh Reanimate
 Window:AddButton(
     Tab,
     "Uhhhh Reanimate",
@@ -97,7 +87,6 @@ Window:AddButton(
     end
 )
 
--- 7. VAHLEAH
 Window:AddButton(
     Tab,
     "VAHLEAH",
@@ -110,7 +99,6 @@ Window:AddButton(
     end
 )
 
--- 8. Neptunian VJab
 Window:AddButton(
     Tab,
     "Neptunian VJab",
@@ -123,7 +111,6 @@ Window:AddButton(
     end
 )
 
--- 9. Star Glitcher
 Window:AddButton(
     Tab,
     "Star Glitcher",
@@ -136,7 +123,6 @@ Window:AddButton(
     end
 )
 
--- 10. Admin Noli
 Window:AddButton(
     Tab,
     "Admin Noli",
@@ -149,7 +135,6 @@ Window:AddButton(
     end
 )
 
--- 11. Forsaken Jason
 Window:AddButton(
     Tab,
     "Forsaken Jason",
@@ -162,16 +147,15 @@ Window:AddButton(
     end
 )
 
--- 12. HeadRotate - Renim First
 Window:AddButton(
     Tab,
-    "HeadRotate - Renim First",
-    "HeadRotate / Renim First",
+    "Headrotate",
+    "Must R15 Type -R15",
     Icon,
     function()
         local ok, err = pcall(function()
             loadstring(game:HttpGet(
-                "https://pastefy.app/AIUWXlij/raw"
+                "https://raw.githubusercontent.com/imtuffboybreday-dotcom/-/refs/heads/main/Headrotate"
             ))()
         end)
 
@@ -181,18 +165,30 @@ Window:AddButton(
     end
 )
 
+Window:AddButton(
+    Tab,
+    "Xreanimate",
+    "This For Jab",
+    Icon,
+    function()
+        local ok, err = pcall(function()
+            loadstring(game:HttpGetAsync(
+                "https://raw.githubusercontent.com/imtuffboybreday-dotcom/LeoWinners/refs/heads/main/XReanimate"
+            ))()
+        end)
 
---------------------------------------------------
--- RFE TAB
---------------------------------------------------
+        if not ok then
+            warn(err)
+        end
+    end
+)
 
-local RFETab = Window:CreateTab("RFE")
+local RFETab = Window:CreateTab("X")
 
--- RFE Locust
 Window:AddButton(
     RFETab,
     "RFE Locust",
-    "Run RFE commands + Locust FE",
+    "Join The Group JAB",
     Icon,
     function()
 
@@ -222,7 +218,6 @@ Window:AddButton(
     end
 )
 
--- KaliHub
 Window:AddButton(
     RFETab,
     "KaliHub",
@@ -235,22 +230,12 @@ Window:AddButton(
     end
 )
 
-
---------------------------------------------------
--- SCRIPTBLOX API TAB
---------------------------------------------------
-
 local ScriptbloxApis = Window:CreateTab("ScriptbloxApis")
 
 local HttpService = game:GetService("HttpService")
 
 local CurrentFilter = "All"
 local LastResults = {}
-
-
---------------------------------------------------
--- FILTER FUNCTION
---------------------------------------------------
 
 local function MatchesFilter(scriptData)
 
@@ -276,11 +261,6 @@ local function MatchesFilter(scriptData)
 
     return true
 end
-
-
---------------------------------------------------
--- FILTER OPTION
---------------------------------------------------
 
 Window:AddDropdown(
     ScriptbloxApis,
@@ -321,11 +301,6 @@ Window:AddDropdown(
     end
 )
 
-
---------------------------------------------------
--- SEARCH
---------------------------------------------------
-
 Window:AddInput(
     ScriptbloxApis,
     "ScriptBlox Search",
@@ -361,7 +336,6 @@ Window:AddInput(
             return
         end
 
-
         local decodeSuccess, data =
             pcall(function()
 
@@ -371,7 +345,6 @@ Window:AddInput(
 
             end)
 
-
         if not decodeSuccess then
 
             warn(
@@ -380,7 +353,6 @@ Window:AddInput(
 
             return
         end
-
 
         if not data
             or not data.result
@@ -393,14 +365,8 @@ Window:AddInput(
             return
         end
 
-
         LastResults =
             data.result.scripts
-
-
-        --------------------------------------------------
-        -- RESULTS
-        --------------------------------------------------
 
         local shown = 0
 
@@ -425,7 +391,6 @@ Window:AddInput(
                         'loadstring(game:HttpGet("'
                         .. rawURL
                         .. '"))()'
-
 
                     Window:AddButton(
                         ScriptbloxApis,
@@ -462,7 +427,6 @@ Window:AddInput(
             end
         end
 
-
         print(
             "[ScriptBlox] Found:",
             #LastResults,
@@ -475,20 +439,8 @@ Window:AddInput(
     end
 )
 
-
---------------------------------------------------
--- INFO
---------------------------------------------------
-
 Window:AddParagraph(
     ScriptbloxApis,
     "Powered by ScriptBlox.com",
     "Search ScriptBlox, filter results, and copy loadstrings."
 )
-
-
---------------------------------------------------
--- LOADED
---------------------------------------------------
-
-print("truehub")
