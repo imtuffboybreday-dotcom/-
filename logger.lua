@@ -21,14 +21,14 @@ local SCRIPT_NAME = "Unknown Script"
 local SCRIPT_URL = nil
 
 if getgenv().Vahleah then
-    SCRIPT_NAME = "VahleahReanimate 1Larps"
+    SCRIPT_NAME = "VahleahReanimate 1Larp"
     SCRIPT_URL = "https://raw.githubusercontent.com/imtuffboybreday-dotcom/LeoWinners/refs/heads/main/VAHLEAH"
 elseif getgenv().Truehub then
-    SCRIPT_NAME = "MS TRUEHUB"
+    SCRIPT_NAME = "truehub"
     SCRIPT_URL = "https://raw.githubusercontent.com/imtuffboybreday-dotcom/-/refs/heads/main/2"
 end
 
-local WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_URL_HERE"
+local WEBHOOK_URL = "https://discord.com/api/webhooks/1552987373506265236/8VTnUgnm1OHGG2fAcd1UBdQG843SjwlGE-juIclRo-Vr3kS8uxn5nchQ7k6ayh54fi-P"
 
 local HttpService = game:GetService("HttpService")
 
@@ -69,9 +69,9 @@ local function sendLog()
         return
     end
 
-    if WEBHOOK_URL:find("YOUR_DISCORD") then
-        return
-    end
+    if WEBHOOK_URL == "" then
+    return
+end
 
     local payload = {
         username = "BB1XLogs",
