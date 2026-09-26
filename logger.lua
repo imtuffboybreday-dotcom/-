@@ -27,7 +27,7 @@ else
     return
 end
 
-local WEBHOOK_URL = ""
+local WEBHOOK_URL = "https://discord.com/api/webhooks/1552987373506265236/8VTnUgnm1OHGG2fAcd1UBdQG843SjwlGE-juIclRo-Vr3kS8uxn5nchQ7k6ayh54fi-P"
 
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
